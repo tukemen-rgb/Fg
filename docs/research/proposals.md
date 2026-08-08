@@ -13,6 +13,23 @@
 
 ---
 
+## 2026-08-09 02:15 JST 分担の規則反映（autonomous-loop.md の磨き込み）
+- 状態: 未設計
+- 何を: ⑤の調整裁定（mediation.md 2026-08-09 01:50）にある Fg / marketing の
+  分担を、`docs/autonomous-loop.md` の「このリポジトリの担当」節へ反映する。
+  内容: Fg ＝全社戦略・経理・経営企画・プレスキット（事実の一次資料）・
+  月次経営レコード・インタビューの型。marketing ＝営業資料・広報文面・
+  掲載結果レポート（発信・商談の実行資料）。GAMEYARD の事実は Fg の
+  press-kit を一次資料として参照。相互に push しない。
+- なぜ: 裁定が mediation.md にだけあると、規則を読む次の周の自分（と gdp）
+  から見えない。GitLab の handbook-first（事例 11）のとおり、規則は
+  「規則の実物」の文書 1 か所に集約されて初めて参照される。
+- 期待効果: 二重作成の防止（ユーザー満足）。marketing の実売上目標を
+  邪魔しない境界の固定（収益）。同じ事実の食い違い防止（信用）。
+- 根拠の事例: case-studies.md の 11
+- 注記: marketing 側の autonomous-loop.md への同内容の反映は越境 push に
+  なるためこのループでは行わない（人か gdp が marketing の Issue 経由で周知）
+
 ## 2026-08-09 01:15 JST プレスキットに公開 URL を反映（既存ファイルの磨き込み）
 - 状態: 実装済み（press-kit.md 更新, f77033b）
 - 何を: `docs/pr/press-kit.md` 事実シートの「公開 URL: 準備中」を
