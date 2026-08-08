@@ -15,4 +15,22 @@
 
 ---
 
-（まだ無い。役割①が最初の周で書く）
+## 2. Press Kitty（IMPRESS）— プレスキットは無料ツールが競う定番領域になっている
+- 出典: https://impress.games/dopresskit-alternative（2026-08-08 確認）
+- 事実: IMPRESS 社は presskit() の代替として無料の Press Kitty を提供。
+  ビジュアルエディタ・Steam からのゲーム情報自動インポート・ホスティング込み。
+  同ページは presskit() について「オープンソース（GPL-3）だが製品更新は
+  行われていない」と明記している。
+- 学び: プレスキットの用意はインディーでも「特別な広報投資」ではなく、
+  無料で整うのが当たり前の標準装備。SIDRA STUDIO が GAMEYARD の
+  まとまった紹介資料を持たない状態は、取材・紹介の機会損失になる。
+
+## 1. presskit()（Vlambeer / Rami Ismail）— 30〜60 分で作れる形式が業界標準になった
+- 出典: https://dopresskit.com/ / https://github.com/ramiismail/dopresskit（2026-08-08 確認）
+- 事実: Vlambeer の Rami Ismail が開発した無料のプレスキット作成ツール。
+  「30-60 minutes で press page を作る」と明記。ゲーム情報とメディア資料・
+  Let's Play の収益化許可表示・プレスリスト配布（distribute() 連携）などの
+  節を持つ。2014 年公開で、インディーゲームのプレスキットの構造を標準化した。
+- 学び: 記者・紹介者が期待する「決まった置き場所と決まった構造」が既にある。
+  GAMEYARD の事実（何ができる・画像・ロゴ・連絡先）を 1 か所にまとめて
+  おけば、掲載依頼への即応と信用（実在感）に直結する。
