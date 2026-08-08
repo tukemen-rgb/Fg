@@ -14,7 +14,7 @@
 ---
 
 ## 2026-08-09 01:15 JST プレスキットに公開 URL を反映（既存ファイルの磨き込み）
-- 状態: 未設計
+- 状態: 設計済み（designs.md 2026-08-09 01:25）
 - 何を: `docs/pr/press-kit.md` 事実シートの「公開 URL: 準備中」を
   **https://play-game-yard.com** に更新する。出典は 2 つ:
   marketing リポジトリの README（GAMEYARD = https://play-game-yard.com と
