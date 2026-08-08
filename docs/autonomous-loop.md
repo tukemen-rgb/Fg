@@ -1,0 +1,105 @@
+# 自動で作り続けるときの決まり（コーポレート部門）
+
+SIDRA STUDIO のコーポレート部門（広報戦略・経理・経営企画などの統括）を
+無人で回すための作業規則。構造は GAMEYARD
+（[tukemen-rgb/site の docs/autonomous-loop.md](https://github.com/tukemen-rgb/site/blob/main/docs/autonomous-loop.md)）
+と同じ。**判断に迷ったら止まって聞く**のではなく、**判断に迷うことを
+そもそも作業に含めない**（迷う類のものは人が決める）。
+
+## このリポジトリの担当
+
+経営判断の一元管理。成果物はコードではなく**文書**（戦略・広報・経理・
+経営企画）。事業リポジトリの実態は参照して使う:
+
+- [tukemen-rgb/site](https://github.com/tukemen-rgb/site) — GAMEYARD 本体
+- [tukemen-rgb/creater-yard](https://github.com/tukemen-rgb/creater-yard) — CreatorYard
+- [tukemen-rgb/marketing](https://github.com/tukemen-rgb/marketing) — マーケティング
+
+参照は読み取りのみ。**他リポジトリへの push はしない。**
+
+## 分担
+
+| | 間隔 | 担当 |
+| --- | --- | --- |
+| **gdp（ChatGPT）** | 毎時 :00 | 経営視点のレビュー・優先順位・指摘 |
+| **Claude Code**（ここ） | 毎時 :10〜:50 の 5 役 | 調査・設計・実装・監査・調停 |
+| **人（社長）** | — | 要判断の裁可。gdp を起動する |
+
+### 往復は AI Review Board（[Issue #1](https://github.com/tukemen-rgb/Fg/issues/1)）でやる
+
+人にテキストを持ち運ばせない。やりとりはすべて Issue #1 のコメントに書く。
+
+- **読む** … `mcp__github__issue_read`（`method: get`）で**コメント総数だけ**
+  先に見る。前回より**増えたときだけ**、`get_comments` の最後のページを読む。
+  総数が同じなら読まない（トークンを使わない）
+- **書く** … `mcp__github__add_issue_comment`。役割④のレポートと
+  役割⑤の裁定だけが書く。**変化が無い周の重複レポートは投稿しない**
+
+判断を仰ぎたいことは、レポートの末尾に**質問として明記する**。勝手に決めない。
+
+## 5 役ローテーション（毎時・10 分間隔・1 時間で 1 サイクル）
+
+予約は毎時 :10 / :20 / :30 / :40 / :50（JST。分は UTC でも同値）。
+gdp（ChatGPT）は毎時 :00 に動く予定。
+
+| 分 | 役割 | 出力先 |
+| --- | --- | --- |
+| :00 | gdp（ChatGPT）— 経営視点のレビュー | Issue #1 |
+| :10 | ① 調査・提案（gdp の意見＋他社事例。**gdp の意見が無い/承認待ちで止まっているときは、これまでの GitHub の内容から Claude が自分で論点を立てて提案する**） | docs/research/case-studies.md, proposals.md |
+| :20 | ② 技術設計（**リスク節を必須にする**: 財務・法務・信用/ブランド） | docs/research/designs.md |
+| :30 | ③ 実装（設計を文書・仕組みに落として commit） | 成果物＋designs.md に実装済み印 |
+| :40 | ④ 監査・報告（①〜③の一貫性と既存文書との整合→docs/cycle-report.md→Issue #1） | docs/cycle-report.md, Issue #1 |
+| :50 | ⑤ 調停（gdp と Claude の意見のズレを、ユーザー満足・収益・信用の中立で裁いて①〜④へ次の指示を出す） | docs/research/mediation.md, Issue #1 |
+
+### 回し方の決まり
+
+- **前の役割の処理がまだ走っていたら、重ねずに見送る**
+- **10 分に収まらない処理は background で回し、次の役割は見送りにする。
+  切り上げない**（半端な成果物を残すより 1 枠飛ばすほうが安い）
+- **変化なしの周は確認だけでスキップする。** この運用はトークン消費が
+  大きい（90 分 1 本と比べ約 10 倍超）ので、この規則が効いてくる。
+  スキップした周は commit もコメントもしない
+- 事例は**累積 100 件以上が目標**。1 周で埋めるために推測を書かない
+
+## 常に守るもの
+
+| 決まり | 確かめ方 |
+| --- | --- |
+| 文書間の整合を壊さない | README・docs/STRATEGY.md・docs/ROADMAP_90D.md・docs/KPI.md と矛盾しないか読み合わせる |
+| 事実と提案を分ける | 出典の無い数字・実績を書かない。推測は推測と明記 |
+| commit は小さく | 1 つの commit で 1 つのこと。事例追記と提案は分けてよい |
+| 作業ブランチのみ | `claude/autonomous-loop-setup-m7z9rg` に push。main へは出さない |
+
+## 人が決めるまで変えない一覧（プロジェクト固有・育てる）
+
+| 項目 | 理由 |
+| --- | --- |
+| 経営ゲートの数値（README / docs/KPI.md） | 投資判断の基準そのもの |
+| 事業の順序と北極星指標 | 全社戦略の骨格 |
+| **対外発信**（プレスリリース・SNS 投稿・営業メールの送信） | 出したら取り消せない。文面の**下書きまで**は作業してよい |
+| 金額・契約・支払い・価格の決定 | 経営の判断であって文書の判断ではない |
+| main への push・PR の merge | 人が決める |
+| 他リポジトリへの push | このループの権限外。参照のみ |
+
+判断が必要になったら、その項目に**要判断**と明記して人が決めるまで
+役割②以降に流さない。設計の判断そのものは gdp 側の担当なので、
+迷ったものは「gdp からの指摘」を待つ形にしてよい。
+
+## 環境メモ（プロジェクト固有）
+
+**このリポジトリで実際に踏んだものだけ書く。** 他プロジェクトのメモ
+（site の clamd・pgrep・Playwright 等）をそのまま持ち込まない。
+
+- 2026-08-08: docs のみのリポジトリ。package.json・試験・ビルドは無い。
+  「確認」は文書整合の読み合わせを指す
+- 2026-08-08: 他リポジトリの参照は匿名 git clone で読む
+  （`GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1`）。GitHub API はこのリポジトリの分しか使えない
+
+## 記録
+
+- `docs/research/` — 受け皿 4 ファイル（case-studies / proposals / designs / mediation）
+- `docs/cycle-report.md` — 役割④が毎周追記（初回に作成）
+- `docs/worklog.md` — やったこと（追記のみ。1 件 3 行以内。初回に作成）
+
+worklog は「次の回の自分」が読むためのもの。何をしたかより、
+**何に気づいたか・何を避けたか**を残すほうが役に立つ。
