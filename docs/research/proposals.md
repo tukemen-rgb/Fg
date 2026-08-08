@@ -14,7 +14,7 @@
 ---
 
 ## 2026-08-08 20:15 JST GAMEYARD プレスキットの下書き一式（docs/pr/press-kit.md）
-- 状態: 設計済み（designs.md 2026-08-08 20:25）
+- 状態: 実装済み（docs/pr/press-kit.md, 483c25b）
 - 何を: GAMEYARD のプレスキット下書きを `docs/pr/press-kit.md` として作る。
   節は presskit() の標準構造に合わせる（概要 / 事実シート: 開発元・公開状況・
   URL・価格 / 特徴 / 画像・ロゴの置き場所 / 連絡先）。事実は site リポジトリ
