@@ -15,6 +15,21 @@
 
 ---
 
+## 13. FTC「Disclosures 101 for Social Media Influencers」— スポンサー表記は本文に・略語は不可
+- 出典: https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers（2026-08-09 確認）
+- 事実: 米国 FTC スタッフによる指針。ブランドとの「重要な関係」（金銭・雇用・
+  個人的・家族の関係、無料/割引の提供を含む）がある投稿は開示が必要。開示は
+  **投稿本文に直接置く**（プロフィール欄や「もっと見る」の先では不十分、
+  ハッシュタグの束に埋もれさせない、動画・ストーリーズはテキストを重ねる）。
+  語は "advertisement" "ad" "sponsored" のように平易にし、"sp" "spon" などの
+  略語は不適切。**開示の責任は投稿者本人にあり、ブランド任せにしない**。
+- 学び: スポンサー商品を作る前に「表記の最低ライン」を自分側の文書で
+  固定しておくと、営業のたびに判断がぶれない。GAMEYARD は既に
+  「PR 表記なしの協賛を作らない」設計を持っている（site SPEC §5）ので、
+  それを一次資料に書いておけば marketing 側もそのまま引ける。
+- 注記: これは米国の指針。**日本の景品表示法まわりの扱いは未確認**で、
+  推測は書かない（裏取りは次周以降の候補）。
+
 ## 12. Default Alive or Default Dead?（Paul Graham）— 資金が尽きる前に必ず問う 1 つの判定
 - 出典: https://www.paulgraham.com/aord.html（2026-08-09 確認）
 - 事実: Paul Graham のエッセイ（2015 年 10 月）。「支出が今のままで、
