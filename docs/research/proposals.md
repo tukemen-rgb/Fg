@@ -14,7 +14,7 @@
 ---
 
 ## 2026-08-08 22:15 JST 制作者インタビューの型（docs/research/interviews.md）
-- 状態: 設計済み（designs.md 2026-08-08 22:25）
+- 状態: 実装済み（docs/research/interviews.md, 306dd21）
 - 何を: 経営ゲート条件「制作者インタビュー 10 件」を進めるための
   **質問票と記録の受け皿**を `docs/research/interviews.md` に作る。
   質問は The Mom Test に倣い**過去の行動の事実**を聞く（最後に投稿したのは
