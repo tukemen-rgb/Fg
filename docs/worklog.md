@@ -1,5 +1,9 @@
 # worklog（追記のみ。1 件 3 行以内）
 
+## 2026-08-09 01:16 JST ①調査: marketing リポを初参照
+GAMEYARD の公開 URL（play-game-yard.com）が marketing README に実在し
+稼働も確認。今周は外部事例より内部の新事実を優先（事例は次周に再開）。
+
 ## 2026-08-09 00:37 JST ③実装: A指標の集計手順書（f20e2cc）
 export の依頼列を slug・createdAt に限定（個人データを入れない）。
 「人の回答が来た瞬間に動ける」準備はこれで完了。あとは待ちが正しい。
