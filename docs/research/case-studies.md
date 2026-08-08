@@ -15,6 +15,26 @@
 
 ---
 
+## 6. The Mom Test — 「顧客は嘘をつく」前提で、意見でなく事実を聞く手法
+- 出典: https://www.momtestbook.com/（2026-08-08 確認）
+- 事実: Rob Fitzpatrick（連続起業家・YC 出身）のハンドブック。「顧客は
+  嘘をつく」を前提に、バイアスのある反応を避ける質問法・話したくなる
+  依頼メールの書き方・本気で使う人の見分け方を扱うと明記。読了約 2 時間。
+- 学び: 制作者インタビューで「GAMEYARD どうですか？」と聞くと社交辞令が
+  返る。**過去の行動の事実**（最後に投稿したのはいつ・どこで詰まったか・
+  他はどこを使っているか）を聞く設問にすれば、答えが検証可能な事実になり
+  月次レコードにもそのまま書ける。
+
+## 5. Game Developer 誌の Postmortem — 「うまくいった 5 つ / いかなかった 5 つ」の定型が 25 年続いた
+- 出典: https://www.gamedeveloper.com/programming/postmortem-game-developer-magazine / https://www.gamedeveloper.com/audio/dissecting-the-postmortem-lessons-learned-from-two-years-of-game-development-self-reportage（2026-08-08 確認）
+- 事実: Game Developer 誌の看板企画 Postmortem は、開発チーム自身が
+  What Went Right 5 つ・What Went Wrong 5 つを選んで書く定型。初回は
+  1997 年 10 月（Dark Sun Online）。表紙記事になるほど重視され、誌の
+  終刊後も Gamasutra が伝統を継いだ。
+- 学び: 「右 / 誤り を同数・定型で聞く」形式は、回答者が正直に話しやすく
+  比較・蓄積もできる。インタビューの型に「良かった点 / 詰まった点を
+  同数ずつ」を組み込むと、10 件たまったときに横断で読める資産になる。
+
 ## 4. Ghost — 非営利の運営が財務・利用数字をライブで公開し信用の土台にしている
 - 出典: https://ghost.org/about/（2026-08-08 確認）
 - 事実: Ghost は非営利財団。ARR $11,055,673・月間経常収益 $921,306・
