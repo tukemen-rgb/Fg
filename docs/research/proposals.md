@@ -14,7 +14,7 @@
 ---
 
 ## 2026-08-08 21:20 JST 月次経営レコードの受け皿（docs/finance/monthly-record.md）
-- 状態: 未設計
+- 状態: 設計済み（designs.md 2026-08-08 21:25）
 - 何を: 月ごとに「収入・支出・KPI 実績」を**事実だけ**記録する台帳の型を
   `docs/finance/monthly-record.md` に作り、2026-08 分の初回レコードを
   書き始める。収支がゼロの月は**ゼロと記録する**。KPI は docs/KPI.md の
