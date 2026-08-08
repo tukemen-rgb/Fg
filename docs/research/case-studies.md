@@ -15,6 +15,17 @@
 
 ---
 
+## 11. GitLab Handbook — 分担・規則・文化を「1 か所の公開文書」に置く handbook-first
+- 出典: https://handbook.gitlab.com/about/（2026-08-09 確認）
+- 事実: GitLab は企業文化・プロセス・製品情報を含む社内文書を
+  handbook.gitlab.com で全公開している。数百ページ超の規模で、
+  「The importance of a handbook-first approach to communication」という
+  方針ページを持ち、コミュニケーションの中心にハンドブックを置くと明記。
+- 学び: 分担や規則は「言った・聞いた」ではなく**1 か所の文書に書いて
+  参照させる**のが機能する形。Fg と marketing の分担も、両リポジトリの
+  autonomous-loop.md（規則の実物）に同じ内容が書かれて初めて効く。
+  まず Fg 側の規則文書に反映するのが第一歩（⑤の裁定 2026-08-09 01:50）。
+
 ## 10. Open Collective — 「全取引を誰でも見られる」を仕組みにした資金管理
 - 出典: https://opencollective.com/how-it-works（2026-08-08 確認）
 - 事実: コミュニティが資金を透明に集めて支出するためのオープンソース
