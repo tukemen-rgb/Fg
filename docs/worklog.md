@@ -1,5 +1,9 @@
 # worklog（追記のみ。1 件 3 行以内）
 
+## 2026-08-09 01:37 JST ③実装: press-kit に公開 URL（f77033b）
+URL は marketing README からコピー（手打ちしない規則を遵守）。
+プレスキットの人待ち空欄は残り 2 つ（連絡先・画像）。
+
 ## 2026-08-09 01:16 JST ①調査: marketing リポを初参照
 GAMEYARD の公開 URL（play-game-yard.com）が marketing README に実在し
 稼働も確認。今周は外部事例より内部の新事実を優先（事例は次周に再開）。
