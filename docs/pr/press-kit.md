@@ -4,6 +4,8 @@
 構成は presskit()（業界標準。docs/research/case-studies.md の 1・2）に合わせた。
 事実の出典はすべて [tukemen-rgb/site](https://github.com/tukemen-rgb/site) の
 README.md・SPEC.md（2026-08-08 確認）。出典の無い数字は書いていない。
+公開 URL は marketing リポジトリ README と実サイトの稼働確認
+（2026-08-09）による。
 
 ## 概要
 
@@ -11,6 +13,7 @@ GAMEYARD（ゲームヤード）は、個人・インディー開発者向けの
 プラットフォームと、Steam / itch.io から収集した 2 万件超のゲームカタログを
 組み合わせた、SEO / AI 検索最適化のゲームサイト。対象は日本語圏。
 外部検索・AI 検索から作品ページへ直接届くことを構造的な強みとする。
+公開 URL: https://play-game-yard.com
 
 ## 事実シート
 
@@ -18,7 +21,7 @@ GAMEYARD（ゲームヤード）は、個人・インディー開発者向けの
 | --- | --- |
 | 開発元 | SIDRA STUDIO（シドラスタジオ） |
 | 形態 | Web（ブラウザ） |
-| 公開 URL | 準備中 |
+| 公開 URL | https://play-game-yard.com |
 | 利用料 | 投稿無料。掲載料・売上手数料なし |
 | 販売 | サイト上での有料販売はしない |
 | 対象地域 | 日本語圏 |
