@@ -17,7 +17,7 @@
 | 広報・対外表示 | 1（presskit()）・2（Press Kitty）・13（FTC の開示指針）・15（日本のステマ規制） |
 | 経理・財務 | 3（Buffer）・4（Ghost）・10（Open Collective）・12（default alive/dead） |
 | 経営企画・運用の規律 | 9（GitHub 公開ロードマップ）・11（GitLab handbook）・14（launch checklist）・16（インシデント管理）・17（Shape Up の appetite） |
-| 計測 | 7（Plausible）・8（GoatCounter） |
+| 計測 | 7（Plausible）・8（GoatCounter）・19（サーバーログ解析の限界） |
 | 利用者に聞く | 5（Postmortem の定型）・6（The Mom Test）・18（5 人テスト） |
 
 書式:
@@ -28,6 +28,21 @@
 - 学び: <SIDRA STUDIO にどう効くか（ユーザー満足 / 収益 / 信用の観点）>
 
 ---
+
+## 19. サーバーログ解析の限界（Plausible）— ボットが混ざり、実測が 18 倍に膨らんだ
+- 出典: https://plausible.io/blog/server-log-analysis（2026-08-09 確認）
+- 事実: Marko Saric（2020-06-30）。サーバーログ解析はサーバー側で全リクエストを
+  記録する方式。**長所**はページ速度に影響しない・広告ブロッカーで止まらない・
+  JavaScript 無効の利用者も数えられる・第三者連携が不要。**短所**は設定が
+  複雑・**ボットの除外が難しく精度が低い**・ログにアクセスできない環境がある・
+  保持期間が限られる。クローラーは JavaScript を実行しないため JS 計測では
+  自動的に外れる。著者の実例では **AWStats のページビューが Plausible の
+  18 倍**（ボット込み）だった。
+- 学び: 「サーバーにログがあるから計測できる」は成り立たない。GAMEYARD の
+  B 指標（週次アクティブ・プレイ数・再訪率）をログから起こすと、**2 万件超の
+  カタログを持つ SEO サイトの性質上クローラーが多く、数字が大きく出る**恐れが
+  ある。実装方式を選ぶのは site 側・人だが、**どちらを選んでも「ボットを
+  どう除くか」を先に決めないと数字が信用されない**という判断材料になる。
 
 ## 18. 5 人でテストすれば足りる（Nielsen Norman Group）— 少人数を何度も回す
 - 出典: https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/（2026-08-09 確認）
