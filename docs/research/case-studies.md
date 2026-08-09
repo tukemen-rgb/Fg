@@ -16,7 +16,7 @@
 | --- | --- |
 | 広報・対外表示 | 1（presskit()）・2（Press Kitty）・13（FTC の開示指針）・15（日本のステマ規制） |
 | 経理・財務 | 3（Buffer）・4（Ghost）・10（Open Collective）・12（default alive/dead） |
-| 経営企画・運用の規律 | 9（GitHub 公開ロードマップ）・11（GitLab handbook）・14（launch checklist）・16（インシデント管理） |
+| 経営企画・運用の規律 | 9（GitHub 公開ロードマップ）・11（GitLab handbook）・14（launch checklist）・16（インシデント管理）・17（Shape Up の appetite） |
 | 計測 | 7（Plausible）・8（GoatCounter） |
 | 利用者に聞く | 5（Postmortem の定型）・6（The Mom Test） |
 
@@ -28,6 +28,18 @@
 - 学び: <SIDRA STUDIO にどう効くか（ユーザー満足 / 収益 / 信用の観点）>
 
 ---
+
+## 17. Shape Up の appetite — 見積もりではなく「使ってよい時間」を先に決める
+- 出典: https://basecamp.com/shapeup/1.5-chapter-06（2026-08-09 確認）
+- 事実: Basecamp の Ryan Singer による「Shape Up」第 6 章。**appetite** は
+  「見積もりではなく、そのプロジェクトに使いたい時間の量」と定義され、
+  時間の予算として働く。原則は **"Fixed time, variable scope"**（時間を
+  固定し、その中でできる範囲を調整する）。appetite を制約として明示し
+  受け入れることが、関係者を「同じ制約の中で工夫する仲間」に変えると述べる。
+- 学び: このループの 10 分枠はまさに appetite で、⑤が入れた「1 周を軽く
+  する」規則（事例を 1〜2 件・裏取り URL 2 件まで）は fixed time,
+  variable scope の実装になっている。**枠を守るために成果物の大きさを
+  変える**という順序を、迷ったときの拠り所にできる。
 
 ## 16. Google SRE の Incident Management — 情報連絡を独立した役割として置く
 - 出典: https://sre.google/sre-book/managing-incidents/（2026-08-09 確認）
