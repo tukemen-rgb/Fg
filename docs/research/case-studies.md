@@ -15,7 +15,7 @@
 | 領域 | 事例番号 |
 | --- | --- |
 | 広報・対外表示 | 1（presskit()）・2（Press Kitty）・13（FTC の開示指針）・15（日本のステマ規制）・25（Show HN のルール）・26（デジゲー博） |
-| 経理・財務 | 3（Buffer）・4（Ghost）・10（Open Collective）・12（default alive/dead） |
+| 経理・財務 | 3（Buffer）・4（Ghost）・10（Open Collective）・12（default alive/dead）・27（広告掲載の前提条件） |
 | 経営企画・運用の規律 | 9（GitHub 公開ロードマップ）・11（GitLab handbook）・14（launch checklist）・16（インシデント管理）・17（Shape Up の appetite）・22（スケールしないことをやれ）・23（Global Game Jam） |
 | 計測 | 7（Plausible）・8（GoatCounter）・19（サーバーログ解析の限界）・21（指標の定義）・24（itch.io のジャム表示） |
 | 利用者に聞く | 5（Postmortem の定型）・6（The Mom Test）・18（5 人テスト）・20（Opportunity Solution Tree） |
@@ -28,6 +28,40 @@
 - 学び: <SIDRA STUDIO にどう効くか（ユーザー満足 / 収益 / 信用の観点）>
 
 ---
+
+## 27. Google Publisher Policies — 広告を出せない画面の条件が決まっている
+- 出典: https://support.google.com/adsense/answer/10502938（2026-08-10 確認）
+- 事実: Google の広告掲載者向けポリシー。**画面（ページ）に対する条件**として、
+  次のものに広告を出せないと定めている:
+  - 「**screens without publisher-content or with low-value content**」
+    （掲載者自身のコンテンツが無い画面、価値の低いコンテンツの画面）、
+    および「**screens that are under construction**」
+  - 「**embedded or copied content from others without additional commentary,
+    curation, or otherwise adding value**」
+    （他者から埋め込み・コピーしたコンテンツで、**解説・キュレーション・
+    その他の付加価値が無いもの**）
+  - 「**more ads or other paid promotional material than publisher-content**」
+    （コンテンツより広告・有料の販促のほうが多い画面）
+  また**広告配置**として、ナビゲーションや操作要素に重なる・隣接して
+  意図しないクリックを誘う配置、コンテンツの閲覧を著しく妨げる配置を禁じる。
+  **プライバシー**では、掲載者は「**データの収集・共有・利用を明確に開示する
+  プライバシーポリシーを持ち、それに従う**」ことを求められ、13 歳未満を
+  対象とする場合は**興味関心に基づく広告（リマーケティングを含む）を使わない**。
+  正確な位置情報の収集には**オプトインの明示同意**と暗号化を要求する。
+  さらに掲載者自身について「**misrepresent, misstate, or conceal information
+  about the publisher**」を禁じる。
+- 学び: GAMEYARD の収益モデルは**広告とアフィリエイト**（press-kit の事実シート）。
+  一方でサイトの大半は **Steam / itch.io から収集した 21,907 件のカタログ**を
+  事前生成したページ（21,335 件）で、**投稿作品は実測 0 件**。
+  上の「他者のコンテンツに付加価値が無いもの」「掲載者自身のコンテンツが無い画面」
+  という条項は、**申請の前に確認しておく必要がある項目**として記録する。
+  **この条項が GAMEYARD にどう適用されるかを AI は判断しない**
+  （判断するのは Google と人）。ここで言えるのは、
+  **収益の入口に、事前に読んでおくべき条件が文書で公開されている**という事実だけ。
+  併せて、プライバシーポリシーの要件は monthly-record の
+  「B 指標を実装する前に決めること」（訪問の区切り・同一人物の数え方・
+  ボットの除き方）と**同じ場所で効く** — 計測の実装と広告の受け入れ条件が、
+  どちらもデータの扱いの開示を求めている。
 
 ## 26. デジゲー博 — 国内に制作者が物理的に集まる場がある
 - 出典: https://digigame-expo.org/（2026-08-10 確認）
