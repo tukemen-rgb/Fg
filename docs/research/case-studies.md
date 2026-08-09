@@ -18,7 +18,7 @@
 | 経理・財務 | 3（Buffer）・4（Ghost）・10（Open Collective）・12（default alive/dead） |
 | 経営企画・運用の規律 | 9（GitHub 公開ロードマップ）・11（GitLab handbook）・14（launch checklist）・16（インシデント管理）・17（Shape Up の appetite） |
 | 計測 | 7（Plausible）・8（GoatCounter） |
-| 利用者に聞く | 5（Postmortem の定型）・6（The Mom Test） |
+| 利用者に聞く | 5（Postmortem の定型）・6（The Mom Test）・18（5 人テスト） |
 
 書式:
 
@@ -28,6 +28,18 @@
 - 学び: <SIDRA STUDIO にどう効くか（ユーザー満足 / 収益 / 信用の観点）>
 
 ---
+
+## 18. 5 人でテストすれば足りる（Nielsen Norman Group）— 少人数を何度も回す
+- 出典: https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/（2026-08-09 確認）
+- 事実: Jakob Nielsen（NN/g、2000-03-18）。Landauer と Nielsen の研究に
+  基づく式で、**1 人のテストで問題の約 31% が見つかる**とし、人数を
+  増やすほど新しい発見は減る（5 人を超えると同じ問題の観察が増える）。
+  15 人でほぼ全問題（約 85% 以上）に届くが、**1 回 15 人より「5 人 × 3 回」を
+  推奨**し、テスト→修正→再テストを反復するほうが効果的だと述べる。
+- 学び: 経営ゲートの「制作者インタビュー 10 件」を**一度に 10 件やる必要は
+  ない**。5 件やって投稿導線を直し、また 5 件、の順にすれば同じ 10 件でも
+  改善が 2 回入る。interviews.md の台帳は 1〜10 の一列なので、**5 件で
+  一区切りと分かる形**にしておくと運用が自然にそうなる。
 
 ## 17. Shape Up の appetite — 見積もりではなく「使ってよい時間」を先に決める
 - 出典: https://basecamp.com/shapeup/1.5-chapter-06（2026-08-09 確認）
