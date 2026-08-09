@@ -14,7 +14,7 @@
 
 | 領域 | 事例番号 |
 | --- | --- |
-| 広報・対外表示 | 1（presskit()）・2（Press Kitty）・13（FTC の開示指針）・15（日本のステマ規制） |
+| 広報・対外表示 | 1（presskit()）・2（Press Kitty）・13（FTC の開示指針）・15（日本のステマ規制）・25（Show HN のルール）・26（デジゲー博） |
 | 経理・財務 | 3（Buffer）・4（Ghost）・10（Open Collective）・12（default alive/dead） |
 | 経営企画・運用の規律 | 9（GitHub 公開ロードマップ）・11（GitLab handbook）・14（launch checklist）・16（インシデント管理）・17（Shape Up の appetite）・22（スケールしないことをやれ）・23（Global Game Jam） |
 | 計測 | 7（Plausible）・8（GoatCounter）・19（サーバーログ解析の限界）・21（指標の定義）・24（itch.io のジャム表示） |
@@ -28,6 +28,41 @@
 - 学び: <SIDRA STUDIO にどう効くか（ユーザー満足 / 収益 / 信用の観点）>
 
 ---
+
+## 26. デジゲー博 — 国内に制作者が物理的に集まる場がある
+- 出典: https://digigame-expo.org/（2026-08-10 確認）
+- 事実: **同人ゲーム・インディーゲームの展示・頒布のイベント**。会場は
+  **秋葉原 UDX（アキバスクエア・UDX ギャラリー）**。出展はプラットフォームを
+  問わず、PC・スマートフォン・タブレット・ゲーム専用機のいずれでもよく、
+  「**ゲームだけでなく、ライブラリや制作ツールの展示・頒布でも OK**」と明記。
+  開催日は **11 月 8 日（日）**と記載。**出展サークル数・来場者数の数字は
+  ページに無い。** なお回次と年の表記が混在しており、**開催年はこのページの
+  記載だけでは確定できない**（申し込む前に公式で再確認する）。
+- 学び: 事例 22 の「手作業で最初のユーザーを獲りに行く」を、**国内の日本語圏で
+  実行できる具体的な場**が存在する。GAMEYARD の対象は日本語圏なので、
+  英語圏の発表の場（事例 25）より読者が合う。ただし出展は**日程と費用**を伴う
+  ため、実施は**要判断**（金額・契約の決定は人）。Fg 側でできるのは、
+  声かけの経路表に「催事」という選択肢があると書き残すところまで。
+  **数字が公開されていないので、規模を推測して書かない。**
+
+## 25. Show HN のルール — 「登録なしで試せる」が条件になっている
+- 出典: https://news.ycombinator.com/showhn.html（2026-08-10 確認）
+- 事実: Hacker News の発表枠のルール。**「Show HN is for something you've made
+  that other people can play with」**（他の人が実際に触れるもの）。
+  「**Make it easy for users to try your thing out, ideally without barriers
+  such as signups or emails**」（登録やメールの壁なしで試せるようにする）。
+  **ブログ記事・登録ページ・ニュースレター・リスト等の読み物は対象外**
+  （試せないため）。「**If your work isn't ready for users to try out, please
+  don't do a Show HN**」。完成度は問わず「The community is comfortable with
+  work that's at an early stage」。**「Please don't ask friends to upvote or
+  comment」**（友人に upvote やコメントを頼まない）。
+- 学び: GAMEYARD の特徴「**ブラウザで直接プレイできる**（3,916 件）」は、
+  この種の場が求める「登録の壁なしで試せる」と一致している。逆に、
+  投稿を促すための登録導線を前に出すほど、この条件から外れる。
+  **「友人に upvote を頼まない」は、日本のステマ規制（事例 15）と同じ性質**の
+  制約で、依頼して評価を作る行為が場のルールでも禁じられている。
+  なお**読者は英語圏**で、GAMEYARD の対象（日本語圏）とは一致しない。
+  **投稿の実施は対外発信にあたるため要判断。**
 
 ## 24. itch.io のジャム — 一覧に出る数字は「参加登録者」であって提出数ではない
 - 出典: https://itch.io/jams（2026-08-09 確認）
