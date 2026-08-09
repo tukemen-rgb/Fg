@@ -15,6 +15,22 @@
 
 ---
 
+## 16. Google SRE の Incident Management — 情報連絡を独立した役割として置く
+- 出典: https://sre.google/sre-book/managing-incidents/（2026-08-09 確認）
+- 事実: Google SRE Book 第 14 章（Stribblehill 著）。インシデント対応を
+  4 つの役割に分ける: **Incident Command**（全体把握・優先度づけ・
+  責任の割り当て）／**Operational Work**（実際の修正）／
+  **Communication**（対応チームと関係者への定期的な状況更新、文書の最新化）／
+  **Planning**（引き継ぎ・長期の課題）。指揮官の最重要責務は
+  **live incident state document の維持**で、複数人が同時編集できる場所に
+  置き、最重要情報を上部に配置して事後分析用に保管する。
+- 学び: 直す人と伝える人を分けるのがこの型の要点。SIDRA は人数が少なく
+  兼務になるが、**「今どうなっているか」を 1 か所に書き続ける係**を決めて
+  おくだけでも効く。このループの Issue #1 と cycle-report.md は既に
+  その位置にある（起きてから作るのでは間に合わない）。
+- 注記: 本来この周は Atlassian の incident communication を当たったが、
+  ページ本文が取得できず**推測を書かずに見送った**。代わりの出典。
+
 ## 15. 日本のステルスマーケティング規制（消費者庁）— 規制対象は「広告主となる事業者」
 - 出典: https://www.caa.go.jp/policies/policy/representation/fair_labeling/stealth_marketing/（2026-08-09 確認）
 - 事実: 所管は消費者庁。**2023 年 10 月 1 日施行**。「広告であるにもかかわらず、
