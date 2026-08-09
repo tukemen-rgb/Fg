@@ -18,7 +18,7 @@
 | 経理・財務 | 3（Buffer）・4（Ghost）・10（Open Collective）・12（default alive/dead） |
 | 経営企画・運用の規律 | 9（GitHub 公開ロードマップ）・11（GitLab handbook）・14（launch checklist）・16（インシデント管理）・17（Shape Up の appetite） |
 | 計測 | 7（Plausible）・8（GoatCounter）・19（サーバーログ解析の限界） |
-| 利用者に聞く | 5（Postmortem の定型）・6（The Mom Test）・18（5 人テスト） |
+| 利用者に聞く | 5（Postmortem の定型）・6（The Mom Test）・18（5 人テスト）・20（Opportunity Solution Tree） |
 
 書式:
 
@@ -28,6 +28,20 @@
 - 学び: <SIDRA STUDIO にどう効くか（ユーザー満足 / 収益 / 信用の観点）>
 
 ---
+
+## 20. Opportunity Solution Tree（Teresa Torres）— 成果から機会へ、機会から解決策へ
+- 出典: https://www.producttalk.org/2021/08/opportunity-solution-tree/（2026-08-09 確認）
+- 事実: Teresa Torres による、望ましい事業成果に至る経路を図にする方法。
+  4 層構造で、**上に目的（事業成果）／その下に機会の空間（顧客のニーズ・
+  困りごと・願い）／さらに下に解決策の空間（製品・機能）／最下層に仮説検証**
+  を置く。目的はチームの足並みを揃える・事業価値と顧客価値の釣り合いを
+  取る・共通理解を保つ・意思決定の質を上げる・学習を速めること。
+- 学び: SIDRA は北極星指標（週次で遊ばれた投稿作品数）と経営ゲートという
+  **目的の層**を持ち、インタビューの型という**機会を集める道具**も持った。
+  空いているのは**機会と解決策をつなぐ層**で、インタビューで出た困りごとを
+  「どの成果に効くか」で並べる置き場が無い。第 1 巡（5 件）が終わったとき
+  この層が要る（interviews.md の反映先が今は「site 側の改善提案」と
+  一言だけになっている）。
 
 ## 19. サーバーログ解析の限界（Plausible）— ボットが混ざり、実測が 18 倍に膨らんだ
 - 出典: https://plausible.io/blog/server-log-analysis（2026-08-09 確認）
