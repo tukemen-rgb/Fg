@@ -17,7 +17,7 @@
 | 広報・対外表示 | 1（presskit()）・2（Press Kitty）・13（FTC の開示指針）・15（日本のステマ規制） |
 | 経理・財務 | 3（Buffer）・4（Ghost）・10（Open Collective）・12（default alive/dead） |
 | 経営企画・運用の規律 | 9（GitHub 公開ロードマップ）・11（GitLab handbook）・14（launch checklist）・16（インシデント管理）・17（Shape Up の appetite） |
-| 計測 | 7（Plausible）・8（GoatCounter）・19（サーバーログ解析の限界） |
+| 計測 | 7（Plausible）・8（GoatCounter）・19（サーバーログ解析の限界）・21（指標の定義） |
 | 利用者に聞く | 5（Postmortem の定型）・6（The Mom Test）・18（5 人テスト）・20（Opportunity Solution Tree） |
 
 書式:
@@ -28,6 +28,20 @@
 - 学び: <SIDRA STUDIO にどう効くか（ユーザー満足 / 収益 / 信用の観点）>
 
 ---
+
+## 21. 指標の定義を文書で固定する（Plausible の metrics definitions）
+- 出典: https://plausible.io/docs/metrics-definitions（2026-08-09 確認）
+- 事実: 各指標の数え方を明文化している。**訪問（visit / session）は
+  最初に開いた時点で始まり、30 分間なにも操作がないと終わる**。
+  ユニークビジターは同じ日のうちなら複数の訪問でも 1 と数え、
+  日をまたぐ再訪や別端末は別に数える。ページビューは読み込み回数の合計
+  （1 人が 5 ページ見れば 5 PV／ユニークは 1）。直帰率は複数ページを
+  見ずカスタムイベントも発火せずに離脱した割合。滞在時間は 1 ページのみの
+  訪問を 0 秒として平均に含める。
+- 学び: 同じ「週次アクティブ」でも、**日をまたぐ扱い・端末の扱い・
+  無操作の区切り**で数字が変わる。SIDRA の B 指標を実装する前に、
+  こうした定義を先に書いておけば、後から「その数字は何を数えたのか」で
+  もめない（第 15 周に入れたボット除外と同じ性質の前提条件）。
 
 ## 20. Opportunity Solution Tree（Teresa Torres）— 成果から機会へ、機会から解決策へ
 - 出典: https://www.producttalk.org/2021/08/opportunity-solution-tree/（2026-08-09 確認）
