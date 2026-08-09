@@ -15,6 +15,19 @@
 
 ---
 
+## 14. Google SRE の Launch Checklist — 出す前の関門を人が署名して通す
+- 出典: https://sre.google/sre-book/reliable-product-launches/（2026-08-09 確認）
+- 事実: Google SRE Book 第 27 章（Singh・Kirsch・Rau 著）。新しい製品・
+  サービスを出すための **launch checklist**（一般的な問いと具体的な作業項目の
+  一覧）を持ち、アーキテクチャと依存・容量計画・障害モード・ロールアウト計画
+  の失敗を減らす。**Launch Coordination Engineers がゲートキーパーとして
+  「安全」と判断したときに署名する**。低リスクは簡略版、高リスクは完全版。
+- 学び: 「日付が来たから出す」ではなく「関門を通ったから出す」に判断の
+  根拠を置き、**通したことを人の署名として残す**のがこの型の要点。
+  SIDRA も広報発信・スポンサー掲載に同型のゲートを持つ（marketing 側の
+  発信開始ゲート 6 項目）。Fg 側は経営記録として**その充足状況を日付つきで
+  残す**のが役割になる。
+
 ## 13. FTC「Disclosures 101 for Social Media Influencers」— スポンサー表記は本文に・略語は不可
 - 出典: https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers（2026-08-09 確認）
 - 事実: 米国 FTC スタッフによる指針。ブランドとの「重要な関係」（金銭・雇用・
