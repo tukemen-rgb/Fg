@@ -18,7 +18,7 @@
 | 経理・財務 | 3（Buffer）・4（Ghost）・10（Open Collective）・12（default alive/dead）・27（広告掲載の前提条件） |
 | 経営企画・運用の規律 | 9（GitHub 公開ロードマップ）・11（GitLab handbook）・14（launch checklist）・16（インシデント管理）・17（Shape Up の appetite）・22（スケールしないことをやれ）・23（Global Game Jam） |
 | 計測 | 7（Plausible）・8（GoatCounter）・19（サーバーログ解析の限界）・21（指標の定義）・24（itch.io のジャム表示） |
-| 利用者に聞く | 5（Postmortem の定型）・6（The Mom Test）・18（5 人テスト）・20（Opportunity Solution Tree） |
+| 利用者に聞く | 5（Postmortem の定型）・6（The Mom Test）・18（5 人テスト）・20（Opportunity Solution Tree）・28（聞いても当てにならない質問） |
 
 書式:
 
@@ -28,6 +28,31 @@
 - 学び: <SIDRA STUDIO にどう効くか（ユーザー満足 / 収益 / 信用の観点）>
 
 ---
+
+## 28. Interviewing Users（Jakob Nielsen / NN/g）— 聞いても当てにならない質問がある
+- 出典: https://www.nngroup.com/articles/interviewing-users/（2026-08-10 確認）
+- 事実: Jakob Nielsen（NN/g、2010-07-25）。
+  **「What users _say_ and what they _do_ are different」**が基本原則。
+  聞いても有効な答えが得られない例として、UI の選択（購入ボタンは赤か橙か、
+  ドロップダウンかラジオボタンか）を挙げる。**「users can't predict something
+  they haven't seen」**ため、まだ存在しない機能の利用意向は聞けない。
+  さらに**既にある機能についてさえ**「you can't even ask "How useful is
+  feature Y?"」と述べる。回答の扱いについては、
+  **「People can **make up an opinion about anything**, and they'll do so if
+  asked」**（人は何についてでも意見を作れてしまい、聞かれれば作る）、
+  **「People can't remember the details」**で、しばしば
+  **「make up stories to rationalize」**（辻褄合わせの話を作る）傾向がある。
+  重要でない事柄にまで意見が生まれてしまうことを **the query effect** と呼ぶ。
+- 学び: GAMEYARD は**投稿 0 件**の局面にあり、社長が公式アカウントから
+  声かけを始めた段階。ここで最も聞きたくなるのは「**投稿してくれますか**」
+  「**こういう機能があれば使いますか**」だが、この事例によればどちらも
+  **まだ見ていないものへの予測**にあたり、答えは当てにならない。
+  Fg の質問票 v1 は The Mom Test（事例 6）準拠で**過去の行動を聞く**形に
+  なっており、この事例と同じ向きを指している。
+  加えて **the query effect** は、質問票の設問を増やすほど
+  「作られた意見」が混ざる量も増えることを意味する。
+  **設問を足すときは「その答えで何を変えるか」を先に決める**（事例 20 の
+  「成果 → 機会」の順序と同じ）。
 
 ## 27. Google Publisher Policies — 広告を出せない画面の条件が決まっている
 - 出典: https://support.google.com/adsense/answer/10502938（2026-08-10 確認）
