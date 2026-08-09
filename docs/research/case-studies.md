@@ -16,7 +16,7 @@
 | --- | --- |
 | 広報・対外表示 | 1（presskit()）・2（Press Kitty）・13（FTC の開示指針）・15（日本のステマ規制） |
 | 経理・財務 | 3（Buffer）・4（Ghost）・10（Open Collective）・12（default alive/dead） |
-| 経営企画・運用の規律 | 9（GitHub 公開ロードマップ）・11（GitLab handbook）・14（launch checklist）・16（インシデント管理）・17（Shape Up の appetite） |
+| 経営企画・運用の規律 | 9（GitHub 公開ロードマップ）・11（GitLab handbook）・14（launch checklist）・16（インシデント管理）・17（Shape Up の appetite）・22（スケールしないことをやれ） |
 | 計測 | 7（Plausible）・8（GoatCounter）・19（サーバーログ解析の限界）・21（指標の定義） |
 | 利用者に聞く | 5（Postmortem の定型）・6（The Mom Test）・18（5 人テスト）・20（Opportunity Solution Tree） |
 
@@ -28,6 +28,21 @@
 - 学び: <SIDRA STUDIO にどう効くか（ユーザー満足 / 収益 / 信用の観点）>
 
 ---
+
+## 22. Do Things that Don't Scale（Paul Graham）— 最初のユーザーは手作業で取りに行く
+- 出典: https://paulgraham.com/ds.html（2026-08-09 確認）
+- 事実: Paul Graham のエッセイ（2013 年 7 月）。初期は
+  **ユーザーを手作業で個別に募集する**／顧客満足を極端に高める／最初は
+  手作業でやり後から自動化する、といった「スケールしない」行為を勧める。
+  「**待っていてもユーザーは来ない。出て行って獲りに行く必要がある**」と
+  述べる。例として Airbnb（ニューヨークで戸別訪問して募集）と Stripe
+  （その場で新規ユーザーの設定まで行う "Collison installation"）を挙げる。
+- 学び: SIDRA の README は既に「**最初の投稿者とプレイヤーを手動でも
+  獲得する**」を事業の順序の 2 番目に置いており、この考え方と一致している。
+  一方で、**手作業で獲りに行った記録を残す器が Fg には無い**
+  （インタビューの台帳は「聞いた」の記録であって「声をかけた」の記録では
+  ない）。声かけの記録が無いと、何件当たって何件が投稿に至ったかが
+  分からず、次に何を変えるかも決められない。
 
 ## 21. 指標の定義を文書で固定する（Plausible の metrics definitions）
 - 出典: https://plausible.io/docs/metrics-definitions（2026-08-09 確認）
