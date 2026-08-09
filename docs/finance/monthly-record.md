@@ -96,6 +96,15 @@ docs/research/case-studies.md の 19）。方式と除外の決定は site 側�
 Fg 側の記録であり、判断・催促はしない（発信の可否は marketing のゲートと
 社長の承認による）。
 
+#### CreatorYard 送客の記録は条件待ち（2026-08-09 の点検）
+
+README の事業の順序 4 番「CreatorYard へ制作者を送客し、Creator Partner を
+検証する」に対応する記録の器は、Fg 側にまだ無い。**creater-yard は
+2026-08-08 時点で雛形段階**（棚卸しで確認。app に layout/page のみで
+掲載データの仕組みが無い）で、送客先の実体が無いため今は作らない。
+creater-yard に掲載の仕組みができた時点で、送客と Creator Partner の
+検証の記録を作る。
+
 ## A 指標の集計手順（新規投稿作品数/週）
 
 人が export を渡せば、誰がやっても同じ数字になるように定義を固定する。
