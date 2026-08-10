@@ -16,7 +16,7 @@
 | --- | --- |
 | 広報・対外表示 | 1（presskit()）・2（Press Kitty）・13（FTC の開示指針）・15（日本のステマ規制）・25（Show HN のルール）・26（デジゲー博）・33（Working Backwards） |
 | 経理・財務 | 3（Buffer）・4（Ghost）・10（Open Collective）・12（default alive/dead）・27（広告掲載の前提条件）・31（インボイス制度）・32（証憑の保存年数と電子取引） |
-| 経営企画・運用の規律 | 9（GitHub 公開ロードマップ）・11（GitLab handbook）・14（launch checklist）・16（インシデント管理）・17（Shape Up の appetite）・22（スケールしないことをやれ）・23（Global Game Jam）・29（文化庁の契約書ひな形）・30（統合が遅れる risk） |
+| 経営企画・運用の規律 | 9（GitHub 公開ロードマップ）・11（GitLab handbook）・14（launch checklist）・16（インシデント管理）・17（Shape Up の appetite）・22（スケールしないことをやれ）・23（Global Game Jam）・29（文化庁の契約書ひな形）・30（統合が遅れる risk）・35（CC ライセンスの 6 種） |
 | 計測 | 7（Plausible）・8（GoatCounter）・19（サーバーログ解析の限界）・21（指標の定義）・24（itch.io のジャム表示）・34（参加不平等 90-9-1） |
 | 利用者に聞く | 5（Postmortem の定型）・6（The Mom Test）・18（5 人テスト）・20（Opportunity Solution Tree）・28（聞いても当てにならない質問） |
 
@@ -28,6 +28,28 @@
 - 学び: <SIDRA STUDIO にどう効くか（ユーザー満足 / 収益 / 信用の観点）>
 
 ---
+
+## 35. Creative Commons の 6 ライセンス — 利用条件を「選ぶ」形にして定型化した
+- 出典: https://creativecommons.org/share-your-work/cclicenses/（2026-08-10 確認）
+- 事実: Creative Commons は **2002 年設立**。**「Established in 2002, the CC licenses
+  make it possible for everyone around the world to share knowledge, creativity,
+  and culture, legally and freely.」**。ライセンスは **6 種**:
+  **CC BY**（最も許可的。**「distribution, remix, adapt, and build upon the material」**
+  と **commercial use** を認める）／**CC BY-SA**（加えて
+  **「you must license the modified material under the same or a compatible license」**）
+  ／**CC BY-ND**（**「in unadapted form only」**＝改変なしの複製・配布のみ）
+  ／**CC BY-NC**（**「noncommercial purposes only」**）／**CC BY-NC-SA**／**CC BY-NC-ND**
+  （最も制限的）。**6 種すべてに共通して
+  **「Credit must be given to you, the creator」**（作者表示）が要る。
+  **ライセンスを取り消せるかどうかは、このページには記載が無い**（推測で補わない）。
+- 学び: gdp の 2026-08-10 16:00 レビューが立てた **D8ゲート**（作品の権利・掲載許諾・
+  同意の版・撤回手順）に対して、この事例は **「条件を毎回文章で書かず、
+  少数の型から選ばせる」**という形があることを示す。**組み合わせは 3 軸だけ**
+  ——**商用の可否 / 改変の可否 / 同一条件での再配布の要否**——で 6 種が出ている。
+  GAMEYARD の投稿作品に何を採るかは**決めない**（社長と専門家の領域）。
+  ただし**「作者表示は 6 種すべてで必須」**という一点は、
+  **どの型を選んでも投稿画面に作者名の扱いが要る**ことを意味する。
+  **CC を採用するという提案ではない**（自前の利用条件でも同じ 3 軸の問いは立つ）。
 
 ## 34. Participation Inequality（Jakob Nielsen / NN/g）— 投稿する人は 1%、見るだけの人が 90%
 - 出典: https://www.nngroup.com/articles/participation-inequality/（2026-08-10 確認）
