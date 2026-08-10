@@ -16,7 +16,7 @@
 | --- | --- |
 | 広報・対外表示 | 1（presskit()）・2（Press Kitty）・13（FTC の開示指針）・15（日本のステマ規制）・25（Show HN のルール）・26（デジゲー博）・33（Working Backwards） |
 | 経理・財務 | 3（Buffer）・4（Ghost）・10（Open Collective）・12（default alive/dead）・27（広告掲載の前提条件）・31（インボイス制度）・32（証憑の保存年数と電子取引） |
-| 経営企画・運用の規律 | 9（GitHub 公開ロードマップ）・11（GitLab handbook）・14（launch checklist）・16（インシデント管理）・17（Shape Up の appetite）・22（スケールしないことをやれ）・23（Global Game Jam）・29（文化庁の契約書ひな形）・30（統合が遅れる risk）・35（CC ライセンスの 6 種） |
+| 経営企画・運用の規律 | 9（GitHub 公開ロードマップ）・11（GitLab handbook）・14（launch checklist）・16（インシデント管理）・17（Shape Up の appetite）・22（スケールしないことをやれ）・23（Global Game Jam）・29（文化庁の契約書ひな形）・30（統合が遅れる risk）・35（CC ライセンスの 6 種）・36（指定された大規模事業者） |
 | 計測 | 7（Plausible）・8（GoatCounter）・19（サーバーログ解析の限界）・21（指標の定義）・24（itch.io のジャム表示）・34（参加不平等 90-9-1） |
 | 利用者に聞く | 5（Postmortem の定型）・6（The Mom Test）・18（5 人テスト）・20（Opportunity Solution Tree）・28（聞いても当てにならない質問） |
 
@@ -28,6 +28,27 @@
 - 学び: <SIDRA STUDIO にどう効くか（ユーザー満足 / 収益 / 信用の観点）>
 
 ---
+
+## 36. 情報流通プラットフォーム対処法（総務省）— 義務は「指定された大規模事業者」にかかる
+- 出典: https://www.soumu.go.jp/main_sosiki/joho_tsusin/d_syohi/ihoyugai.html（2026-08-10 確認）
+- 事実: 総務省のページに、法の**指定を受けた事業者の一覧**が日付つきで載っている。
+  **令和 7 年 4 月 30 日時点の指定**: Google LLC（YouTube）／LINE 株式会社
+  （Yahoo!知恵袋・Yahoo!ファイナンス・LINE・LINE VOOM）／Meta Platforms, Inc.
+  （Facebook・Instagram・Threads）／TikTok Pte. Ltd.（TikTok・TikTok Lite）／
+  X Corp.（X）。**令和 7 年 5 月 29〜30 日に追加指定**: ニコニコ動画の運営会社／
+  株式会社サイバーエージェント（Ameba）／株式会社ジオシティ／
+  Pinterest Europe Limited。
+  **削除申出への対応期間は、このページには記載が無い**（**別ページにある可能性はあるが、
+  確認できていない。日数を書かない**）。法律番号・公布年も**取得結果が不確かだったため
+  書かない**。
+- 学び: D8（作品の受領・撤回）の設計で参照できるのは**「何日以内」ではなく制度の形**
+  ——**義務は全事業者に一律にかかるのではなく、指定された大規模事業者にかかる**。
+  **2026-08-10 時点でこの一覧に GAMEYARD は無い**（一覧に載っていない、という事実。
+  **法的な当否は専門家の領域**で、このループは判断しない）。
+  つまり **撤回・非公開化までの目安は、法が決めてくれるのではなく
+  SIDRA STUDIO 自身が決める項目**になる可能性が高い、という**問いの立て方**が分かる。
+  **`docs/legal/d8-questions.md` の 4-2（非公開までの目安）の答えにはならない**ので、
+  **同欄は「（例なし。未調査）」のままにする**。
 
 ## 35. Creative Commons の 6 ライセンス — 利用条件を「選ぶ」形にして定型化した
 - 出典: https://creativecommons.org/share-your-work/cclicenses/（2026-08-10 確認）
