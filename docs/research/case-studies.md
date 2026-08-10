@@ -16,7 +16,7 @@
 | --- | --- |
 | 広報・対外表示 | 1（presskit()）・2（Press Kitty）・13（FTC の開示指針）・15（日本のステマ規制）・25（Show HN のルール）・26（デジゲー博） |
 | 経理・財務 | 3（Buffer）・4（Ghost）・10（Open Collective）・12（default alive/dead）・27（広告掲載の前提条件） |
-| 経営企画・運用の規律 | 9（GitHub 公開ロードマップ）・11（GitLab handbook）・14（launch checklist）・16（インシデント管理）・17（Shape Up の appetite）・22（スケールしないことをやれ）・23（Global Game Jam）・29（文化庁の契約書ひな形） |
+| 経営企画・運用の規律 | 9（GitHub 公開ロードマップ）・11（GitLab handbook）・14（launch checklist）・16（インシデント管理）・17（Shape Up の appetite）・22（スケールしないことをやれ）・23（Global Game Jam）・29（文化庁の契約書ひな形）・30（統合が遅れる risk） |
 | 計測 | 7（Plausible）・8（GoatCounter）・19（サーバーログ解析の限界）・21（指標の定義）・24（itch.io のジャム表示） |
 | 利用者に聞く | 5（Postmortem の定型）・6（The Mom Test）・18（5 人テスト）・20（Opportunity Solution Tree）・28（聞いても当てにならない質問） |
 
@@ -28,6 +28,30 @@
 - 学び: <SIDRA STUDIO にどう効くか（ユーザー満足 / 収益 / 信用の観点）>
 
 ---
+
+## 30. Patterns for Managing Source Code Branches（Martin Fowler）— 統合が遅れるほど risk が増える
+- 出典: https://martinfowler.com/articles/branching-patterns.html（2026-08-10 確認）
+- 事実: Martin Fowler（**2020-05-28**）。**「branches inevitably diverge, so as
+  more commits modify mainline, it gets harder to merge the release branch into
+  mainline」**（ブランチは必ず分岐していき、mainline への commit が増えるほど
+  併合が難しくなる）。統合の頻度について
+  **「Smaller integrations mean less work, since there's less code changes that
+  might hold up conflicts. But more importantly than less work, it's also
+  less risk.」**（小さく統合するほど作業が減り、**それ以上に risk が減る**）。
+  さらに **「Frequent integration also alerts teams to conflicts much more
+  quickly」**（頻繁な統合は衝突を早く知らせる）。Feature Branching は機能の
+  長さがそのままブランチの寿命になるのに対し、Continuous Integration は
+  **「decoupling feature length from integration frequency」**（機能の長さと
+  統合の頻度を切り離す）と対比する。
+- 学び: Fg の作業ブランチは 2026-08-10 時点で **main より 42 commit 先行**し、
+  最後の反映は `ddef0a3`（前日 22:35 JST）。**gdp は main しか読んでいない**ため、
+  その間の成果（事例 5 件・経営記録 2 節・規則の修正 3 件）が
+  **gdp のレビューに一度も現れなかった**。
+  **Fowler が挙げるのは主にマージ衝突の risk**で、Fg は docs のみのリポジトリなので
+  衝突はほぼ起きない。**それでも損失は出た** — **統合が遅れると、衝突が無くても
+  「他者から見えない」という別の損失が出る**。これは事例からの直接の帰結ではなく、
+  **Fg で実際に起きた事実として並べて記録する**。
+  「小さく頻繁に統合する」という結論は同じ向きを指している。
 
 ## 29. 文化庁の著作権契約書作成支援システム — 公的機関がひな形を出している
 - 出典: https://www.bunka.go.jp/seisaku/chosakuken/93684801.html（2026-08-10 確認）
