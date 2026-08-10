@@ -14,10 +14,10 @@
 
 | 領域 | 事例番号 |
 | --- | --- |
-| 広報・対外表示 | 1（presskit()）・2（Press Kitty）・13（FTC の開示指針）・15（日本のステマ規制）・25（Show HN のルール）・26（デジゲー博） |
+| 広報・対外表示 | 1（presskit()）・2（Press Kitty）・13（FTC の開示指針）・15（日本のステマ規制）・25（Show HN のルール）・26（デジゲー博）・33（Working Backwards） |
 | 経理・財務 | 3（Buffer）・4（Ghost）・10（Open Collective）・12（default alive/dead）・27（広告掲載の前提条件）・31（インボイス制度）・32（証憑の保存年数と電子取引） |
 | 経営企画・運用の規律 | 9（GitHub 公開ロードマップ）・11（GitLab handbook）・14（launch checklist）・16（インシデント管理）・17（Shape Up の appetite）・22（スケールしないことをやれ）・23（Global Game Jam）・29（文化庁の契約書ひな形）・30（統合が遅れる risk） |
-| 計測 | 7（Plausible）・8（GoatCounter）・19（サーバーログ解析の限界）・21（指標の定義）・24（itch.io のジャム表示） |
+| 計測 | 7（Plausible）・8（GoatCounter）・19（サーバーログ解析の限界）・21（指標の定義）・24（itch.io のジャム表示）・34（参加不平等 90-9-1） |
 | 利用者に聞く | 5（Postmortem の定型）・6（The Mom Test）・18（5 人テスト）・20（Opportunity Solution Tree）・28（聞いても当てにならない質問） |
 
 書式:
@@ -28,6 +28,58 @@
 - 学び: <SIDRA STUDIO にどう効くか（ユーザー満足 / 収益 / 信用の観点）>
 
 ---
+
+## 34. Participation Inequality（Jakob Nielsen / NN/g）— 投稿する人は 1%、見るだけの人が 90%
+- 出典: https://www.nngroup.com/articles/participation-inequality/（2026-08-10 確認）
+- 事実: Jakob Nielsen（**2006-10-08**）。**「90% of users are lurkers (i.e., read or
+  observe, but don't contribute)」「9% of users contribute from time to time」
+  「1% of users participate a lot and account for most contributions」**。
+  観測例として、Usenet では **「27% of the postings were from people who posted
+  only a single message」**、一方 **「the most active 3% of posters contributed
+  25% of the messages」**。Wikipedia は **「more than 99% of users are lurkers」**
+  で **99.8–0.2–0.003**、ブログは **95–5–0.1**、Amazon のレビューは
+  **「less than 1% of customers contribute reviews」**、Facebook Causes は
+  **「99.3% lurkers and 0.7% contributors」**。対策として挙がるのは
+  **「Make it easier to contribute」「Make participation a side effect」
+  「Edit, don't create」「Reward — but don't over-reward — participants」
+  「Promote quality contributors」**の 5 つ。
+- 学び: GAMEYARD は **2026-08-09 実測で投稿 0 件・外部登録者 0 人**
+  （monthly-record）。この事例が示すのは、**投稿が出ないのは「投稿機能の問題」とは
+  限らず、単に「見る人がまだいない」可能性がある**ということ。
+  比率はコミュニティごとに大きく違う（90-9-1 から 99.8-0.2-0.003 まで）ので
+  **GAMEYARD に当てはめて人数を推定しない**。読み取れるのは**順序**だけ ——
+  **見る人が先、投稿する人が後**。README の事業の順序 2 番「最初の投稿者を
+  手動でも獲得する」が「手動でも」と書いているのは、**この比率を待たずに
+  1 人目を作りに行く**という意味に読める。
+  対策 5 つのうち **「Make it easier to contribute」** は site 側の実装、
+  **「Reward — but don't over-reward」** は**順位を付けない方針**（保留中の
+  ジャム開催の質問）と正面から関係する。**どちらもこのループでは決めない。**
+
+## 33. Working Backwards（Amazon / Werner Vogels）— 作る前にプレスリリースを書く
+- 出典: https://www.allthingsdistributed.com/2006/11/working_backwards.html（2026-08-10 確認）
+- 事実: Werner Vogels（**2006-11-01**）。Amazon の新製品開発は
+  **「a process called 'Working Backwards'」**で、**「you start with your customer
+  and work your way backwards until you get to the minimum set of technology
+  requirements」**。着手時に作るのは**発売時に必要になる文書**で、
+  **「we start by writing the documents we'll need at launch (the press release
+  and the faq)」**。4 つの成果物は ①**Press Release**（**「describes in a simple
+  way what the product does and why it exists」**）②**FAQ** ③**Customer Experience
+  Definition**（**「Describe in precise detail the customer experience」**）
+  ④**User Manual**（concepts / how-to / reference の 3 節）。
+  効果として **「it is amazing how much clearer it is what you are planning to
+  build」**と書いている。**「なぜこの順序か」の理由は記事に明示されていない**
+  （推測で補わない）。
+- 学び: SIDRA STUDIO は **プレスキット（`docs/pr/press-kit.md`）を、投稿 0 件・
+  外部登録者 0 人の段階で先に作っている**。順序としては Working Backwards と
+  **同じ向き**で、「まだ実績が無いのにプレスキットがある」ことは**前倒しであって
+  無駄ではない**、と読める。
+  ただし Amazon の 4 点のうち Fg にあるのは**①プレスリリース相当だけ**で、
+  **② FAQ・③顧客体験の記述・④利用者向けの手引きは無い**
+  （2026-08-10 に `docs/` 配下 14 ファイルを列挙して確認。該当文書なし）。
+  **②③④のどれを作るか（あるいは作らないか）は、site 側の実装状況と
+  読み合わせる必要がある**ので、**この事例は候補として記録するだけ**にする。
+  なお **③顧客体験の記述は「投稿完了率」の計測が未実装であること
+  （monthly-record の B 指標）と表裏**で、文書を書けば数字が出るわけではない。
 
 ## 32. 証憑は 7 年保存・電子取引は電子で（国税庁）— 「後で紙に出す」が前提にできない
 - 出典: https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6496.htm ・
