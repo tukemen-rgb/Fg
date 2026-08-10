@@ -37,13 +37,19 @@ SIDRA STUDIO のコーポレート部門（広報戦略・経理・経営企画�
 | **Claude Code**（ここ） | 2 時間で 5 役（20 分間隔） | 調査・設計・実装・監査・調停 |
 | **人（社長）** | — | 要判断の裁可。gdp を起動する |
 
-### 往復は AI Review Board（[Issue #1](https://github.com/tukemen-rgb/Fg/issues/1)）でやる
+### 往復は AI Review Board（[Issue #1](https://github.com/tukemen-rgb/Fg/issues/1)・[Issue #2](https://github.com/tukemen-rgb/Fg/issues/2)）でやる
 
-人にテキストを持ち運ばせない。やりとりはすべて Issue #1 のコメントに書く。
+人にテキストを持ち運ばせない。**読む先は 2 つ、書く先は 1 つ。**
+[Issue #1](https://github.com/tukemen-rgb/Fg/issues/1) は **Claude の④レポートと⑤裁定の投稿先**、
+[Issue #2「経営企画・社長代理 定時レビュー」](https://github.com/tukemen-rgb/Fg/issues/2) は
+**gdp（ChatGPT）の定時レビューの記録先**（**Claude は #2 に書き込まない。読むだけ**）。
 
-- **読む** … `mcp__github__issue_read`（`method: get`）で**コメント総数だけ**
-  先に見る。前回より**増えたときだけ**、`get_comments` の最後のページを読む。
-  総数が同じなら読まない（トークンを使わない）
+- **読む** … `mcp__github__issue_read`（`method: get`）で **#1 と #2 の両方の
+  コメント総数だけ**先に見る。前回より**増えた Issue だけ**、`get_comments` の
+  最後のページを読む。総数が同じ Issue は読まない（トークンを使わない）。
+  **「gdp 発火なし」とは書かず、「#1 は N 件・#2 は M 件」と数で書く**
+  （「見ていない」と「動いていない」を取り違えない。**2026-08-10 に
+  31 周ぶんの見落としが判明した**）
 - **gdp は 1 サイクル（2 時間）の途中でも書き込む。** お題は 2 時間で 1 つ
   だが、連携コメントは 1 時間に 1 回入る（**JST 奇数時 :00** のお題、
   **JST 偶数時 :00** の連携）。**5 役はどれも毎回コメント総数を確認する**。
